@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Reservas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Reporte de Reservas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre del Cliente</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Número de Personas</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Juan Pérez</td>
+                <td>2025-11-20</td>
+                <td>19:00</td>
+                <td>4</td>
+                <td>Confirmada</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>María López</td>
+                <td>2025-11-21</td>
+                <td>20:30</td>
+                <td>2</td>
+                <td>Pendiente</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carlos García</td>
+                <td>2025-11-22</td>
+                <td>18:00</td>
+                <td>6</td>
+                <td>Cancelada</td>
+            </tr>
+            <!-- Puedes añadir más filas aquí -->
+        </tbody>
+    </table>
+
+</body>
+</html>

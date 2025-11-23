@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Factura</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container {
+            width: 700px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        h2 { text-align: center; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h2>Factura GoSport</h2>
+
+    <p><strong>ID Factura:</strong> <span th:text="${factura.id}"></span></p>
+    <p><strong>Fecha:</strong> <span th:text="${factura.fecha}"></span></p>
+    <p><strong>Cliente:</strong> <span th:text="${factura.usuario.nombre}"></span></p>
+
+    <h3>Detalles</h3>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Reserva</th>
+            <th>Cancha</th>
+            <th>Método de Pago</th>
+            <th>Valor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${factura.reserva.id}"></td>
+            <td th:text="${factura.reserva.cancha.nombre}"></td>
+            <td th:text="${factura.metodoPago.nombreMetodo}"></td>
+            <td th:text="${factura.total}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
